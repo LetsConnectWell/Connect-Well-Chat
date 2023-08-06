@@ -17,9 +17,9 @@ const interRegular = fetch(
   new URL('../../../assets/fonts/Inter-Regular.woff', import.meta.url)
 ).then(res => res.arrayBuffer())
 
-const interBold = fetch(
-  new URL('../../../assets/fonts/Inter-Bold.woff', import.meta.url)
-).then(res => res.arrayBuffer())
+// const interBold = fetch(
+//   new URL('../../../assets/fonts/Inter-Bold.woff', import.meta.url)
+// ).then(res => res.arrayBuffer())
 
 interface ImageProps {
   params: {
@@ -106,12 +106,6 @@ export default async function Image({ params }: ImageProps) {
           style: 'normal',
           weight: 400
         },
-        {
-          name: 'Inter',
-          data: await interBold,
-          style: 'normal',
-          weight: 700
-        }
       ]
     }
   )
