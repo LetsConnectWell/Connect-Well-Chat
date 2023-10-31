@@ -4,4 +4,7 @@ module.exports = {
   experimental: {
     serverActions: true,
   },
+  images: {
+    domains: ['existing-domain.com', 'lh3.googleusercontent.com'],
+  },
 };
